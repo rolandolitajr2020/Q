@@ -12,55 +12,23 @@
 </head>
 <body>
      <div class="container">
-       <h2>Collection</h2>
-       <ul class="collection with-header">
-         <li class="collection-header"><h4>Customer</h4></li>
-         <li class="collection-item avatar">
-           <i class="material-icon circle blue">person</i>
-           <span class="title">Ryu</span>
-           <p class="grey-text">black-belt</p>
-           <a href="" class="secondary-content">
-             <i class="material-icons blue-text">email</i>
-           </a>
-         </li>
-         <li class="collection-header"><h4>Customer</h4></li>
-         <li class="collection-item avatar">
-           <i class="material-icon circle blue">person</i>
-           <span class="title">Ben</span>
-           <p class="grey-text">black-belt</p>
-           <a href="" class="secondary-content">
-             <i class="material-icons blue-text">email</i>
-           </a>
-         </li>
-         <li class="collection-header"><h4>Customer</h4></li>
-         <li class="collection-item avatar">
-           <i class="material-icon circle blue">person</i>
-           <span class="title">Cardo</span>
-           <p class="grey-text">black-belt</p>
-           <a href="" class="secondary-content">
-             <i class="material-icons blue-text">email</i>
-           </a>
-         </li>
-         <li class="collection-header"><h4>Customer</h4></li>
-         <li class="collection-item avatar">
-           <i class="material-icon circle blue">person</i>
-           <span class="title">Marie</span>
-           <p class="grey-text">black-belt</p>
-           <a href="" class="secondary-content">
-             <i class="material-icons blue-text">email</i>
-           </a>
-         </li>
-         <li class="collection-header"><h4>Customer</h4></li>
-         <li class="collection-item avatar">
-           <i class="material-icon circle blue">person</i>
-           <span class="title">Berto</span>
-           <p class="grey-text">black-belt</p>
-           <a href="" class="secondary-content">
-             <i class="material-icons blue-text">email</i>
-           </a>
-         </li>
-       </ul>
-     </div>
+       <h2>Modals</h2>
+
+       <a href="#terms" class="btn orange modal-trigger">Term & Conditions</a>
+
+       <div class="modal" id="terms">
+         <div class="modal-content">
+           <h4>Terms & Conditions</h4>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nihil veniam incidunt, recusandae temporibus consequuntur, voluptatum reiciendis voluptatem esse, dolor eaque fugiat et. Fugiat enim porro, quae quisquam labore facilis. </p>
+         </div>
+         <div class="modal-footer">
+           <a href="#" class="modal-close btn orange">Agree & Close</a>
+         </div>
+        </div>
+
+       </div>
+       
+          
 
 <script
      src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -71,7 +39,7 @@
  src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
   $(document).ready(function(){
-    $('.sidenav').sidenav();
+    $('.modal').modal();
   })
 </script>
 </body> 
