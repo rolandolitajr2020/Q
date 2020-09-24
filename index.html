@@ -7,6 +7,11 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
 <title>Collection</title>
+<style>
+  #content-up {
+    margin: 500px;
+  }
+</style>
 </head>
 <body>
   <!--STANDARD MENU-->
@@ -137,8 +142,32 @@
         </a>
       </li>
      </ul>
+     <!--BADGE IN DROPDOWN-->
+     <a href="#" class="btn drop-down-button dropdown-trigger" data-target='dropdown1'>Dropdown
+       <i class="material-icons">arrow_drop_down</i>
+      </a>
+      <ul class="dropdown-content" id="dropdown1">
+        <li>
+          <a href="#">Item 1
+          <span class="badge">44</span>
+          </a>
+       </li>
+        <li>
+          <a href="#">Item 1
+          <span class="badge new">44</span>
+          </a>
+       </li>
+        <li>
+          <a href="#">Item 1
+          <span class="badge">44</span>
+          </a>
+        </li>
+      </ul>
     </div>
-  </div>
+
+    <!--MOVES CONTENT-->
+    <div id="content-up"></div>
+  
   
 
       <!--Jquery CDN--> 
@@ -150,9 +179,10 @@
 <script
  src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
-  $(document).ready(function(){
-    $('.v').();
-  })
+ // $(document).ready(function(){
+   // $('.drop-down-button').dropdown();
+//  })
+$('.dropdown-trigger').dropdown();
 </script>
 </body> 
 </html>
