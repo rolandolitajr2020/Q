@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
-<title>Floating Button</title>
+<title>Collection</title>
 </head>
 <body>
   <!--STANDARD MENU-->
@@ -28,77 +28,119 @@
       </div>
     </div>
   </nav>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <nav class="blue darken-4">
-    <div class="container">
-      <div class="nav-wrapper"><a href="" class="brand-logo">Logo</a>
-        <a href="" class="button-collapse" data-activates="mobile-nav">
-          <i class="material-icons right">menu</i>
-        </a>
-        <ul id="nav-mobile" class="right hide-on-small-and-down">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-          <!--DROPDOWN-->
-          <li><a href="#" class="dropdown-button" data-activates="mydropdown">
-            <i class="material-icons right">arrow_drop_down</i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-        <nav>
-          <ul id="nav-mobile" class="right hide-on-small-and-down">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-          <a href="#" data-target="slide-out" class="sidenav-trigger">
-            <i class="material-icons">menu</i>
-          </a>
 
-        </nav>
-        <ul id="slide-out" class="sidenav">
-          <li><div class="user-view">
-            <div class="background">
-           </div>
-          <!-- <a href="#name"><span class="white-text name">John doe</span></a>
-           <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>-->
+  <!--COLLECTION-->
+  <div class="container">
+    <h1 class="grey-text">Collection</h1>
+    <ul class="collection">
+      <li class="collection-item">First Item</li>
+      <li class="collection-item">Second Item</li>
+      <li class="collection-item">Third Item</li>
+      <li class="collection-item">Fourth Item</li>
+    </ul>
+
+    <!--COLLECTION AS LINKS-->
+    <div class="collection">
+      <a href="#" class="collection-item">First Item</a>
+      <a href="#" class="collection-item">Second Item</a>
+      <a href="index.html" class="collection-item">Home</a>
+      <a href="https://www.google.com" class="collection-item">Side Nav</a>
+
+    <!--BADGES-->
+    <a href="" class="collection-item">
+      <span class="badge">55</span>Fith-item
+    </a>
+    <a href="" class="collection-item">
+      <span class="badge new">55</span>Fith-item
+    </a>
+
+    <!--WITH HEADER-->
+    <ul class="collection with-header">
+      <li class="collection-header">
+        <h4>Items</h4>
+      </li>
+      <li class="collection-item">First Item</li>
+      <li class="collection-item">Second Item</li>
+      <li class="collection-item">Third Item</li>
+      <li class="collection-item">Fourth Item</li>
+    </ul>
+
+    <!--SECONDARY CONTENT-->
+    <ul class="collection with-header">
+      <li class="collection-header">
+        <h4>Item</h4>
+        <li class="collection-item">
+          <div>First Item
+            <a href="#" class="secondary-content">
+              <i class="material-icons">close</i>
+            </a>
           </div>
         </li>
-        <li><a href="#!"><i class="material-icons"></i>First link with icon</a>
+        <li class="collection-item">
+          <div>Second Item
+            <a href="#" class="secondary-content">
+              <i class="material-icons">close</i>
+            </a>
+          </div>
         </li>
-        <li><a href="#!">Second Link</a>
+        <li class="collection-item">
+          <div>Third Item
+            <a href="#" class="secondary-content">
+              <i class="material-icons">close</i>
+            </a>
+          </div>
         </li>
-        <li><div class="divider"></div>
-        </li>
-        <li><a class="subheader">Subheader</a>
-        </li>
-        <li><a class="wave-effect" href="#!">Third link with waves</a>
-        </li>
-      </ul>
-      </div>
+        <li class="collection-item">
+          <div>Fourth Item
+            <a href="#" class="secondary-content">
+              <i class="material-icons">close</i>
+            </a>
+          </div>
+        </li> 
+      </li>
+    </ul>
+
+    <!--AVATAR CONTENT-->
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <i class="material-icons blue circle">Contact</i>
+        <span class="title">John Doe</span>
+        <p>jdoe@gmail.com
+          <br> 555-333-000
+        </p>
+        <a href="#" class="secondary-content">
+          <i class="material-icons">grade</i>
+        </a>
+      </li>
+    </ul>
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <i class="material-icons green circle">Contact</i>
+        <span class="title">Manuel Doe</span>
+        <p>mdoe@gmail.com
+          <br> 555-333-000
+        </p>
+        <a href="#" class="secondary-content">
+          <i class="material-icons">grade</i>
+        </a>
+      </li>
+    </ul>
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <i class="material-icons red circle">Contact</i>
+        <span class="title">Dan Doe</span>
+        <p>ddoe@gmail.com
+          <br> 555-333-000
+        </p>
+        <a href="#" class="secondary-content">
+          <i class="material-icons">grade</i>
+        </a>
+      </li>
+     </ul>
     </div>
-  </nav>
+  </div>
+  
+
       <!--Jquery CDN--> 
 <script
      src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -109,7 +151,7 @@
  src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
   $(document).ready(function(){
-    $('.sidenav').sidenav();
+    $('.v').();
   })
 </script>
 </body> 
