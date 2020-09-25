@@ -34,6 +34,9 @@
       padding-top: 4vw;
       padding-bottom: 4vw;
   }
+  .tabs .indicator {
+        background-color: #1a237e;
+  }
   @media screen and (max-width: 670px) {
       header {
       min-height: 500px;
@@ -103,11 +106,97 @@
         </section>
 
 <!-- PARALLAX -->
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="street.jpg" alt="" class="responsive-img" />
+  </div>
+</div>
 
 <!-- SERVICE & TABS -->
+<section class="container section" id="services">
+  <div class="row">
+    <div class="col s12 l4">
+      <h2 class="indigo-text text-darken-4">What I Do...</h2>
+      <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+        cerebro. De carne lumbering animata corpora quaeritis. Summus brains
+        sit​​.</p>
+      <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+        cerebro. De carne lumbering animata corpora quaeritis. Summus brains
+        sit​​.</p>
+    </div>
+    <div class="col s12 l6 offset-l2">
+      <ul class="tabs">
+        <li class="tab col s6">
+          <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+        </li>
+        <li class="tab col s6">
+          <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+        </li>
+      </ul>
+      <div class="col s12" id="photography">
+        <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+        <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+          cerebro. De carne lumbering animata corpora quaeritis. Summus
+          brains sit​​.</p>
+        <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+          cerebro. De carne lumbering animata corpora quaeritis. Summus
+          brains sit​​.</p>
+      </div>
+      <div class="col s12" id="editing">
+        <p class="flow-text indigo-text text-darken-4">EDITING</p>
+        <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+          cerebro. De carne lumbering animata corpora quaeritis. Summus
+          brains sit​​.</p>
+        <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+          cerebro. De carne lumbering animata corpora quaeritis. Summus
+          brains sit​​.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PARALLAX -->
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="stars.jpg" alt="" class="responsive-img" />
+  </div>
+</div>
 
 <!-- CONTACT FORM -->
-
+<section class="section container" id="contact">
+  <div class="row">
+    <div class="col s12 l5">
+      <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+      <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+        cerebro. De carne lumbering animata corpora quaeritis. Summus brains
+        sit​​.</p>
+      <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+        cerebro. De carne lumbering animata corpora quaeritis. Summus brains
+        sit​​.</p>
+      <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+        cerebro. De carne lumbering animata corpora quaeritis. Summus brains
+        sit​​.</p>
+      <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+        cerebro. De carne lumbering animata corpora quaeritis. Summus brains
+        sit​​.</p>
+    </div>
+    <div class="col s12 l5 offset-l2">
+      <form action="">
+        <div class="input-field">
+          <i class="material-icons prefix">email</i>
+          <input type="email" id="email" />
+          <label for="email">Your Email</label>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">message</i>
+          <textarea id="message" class="materialize-textarea"></textarea>
+          <label for="message">Your Message</label>
+        </div>  
+      </form>
+    </div>
+  </div>
+</section>
 <!-- FOOTER -->
 
     
@@ -119,6 +208,8 @@
           $(document).ready(function() {
             $(".sidenav").sidenav();
             $(".materialboxed").materialbox();
+            $(".parallax").parallax();
+            $(".tabs").tabs();
           });
         </script>
       </body>
