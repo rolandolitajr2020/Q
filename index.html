@@ -54,10 +54,27 @@
                 <i class="material-icons">menu</i>
               </a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="">Photos</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
+                  <a href="" class="tooltipped btn-floating btn-small indigo darken-4"
+                    data-tooltip="This is Instragram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="tooltipped btn-floating btn-small indigo darken-4"
+                    data-tooltip="This is Facebook">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="tooltipped btn-floating btn-small indigo darken-4"
+                    data-tooltip="This is Twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
               </ul>
               <ul class="sidenav grey lighten-2" id="mobile-menu">
                 <li><a href="">Photos</a></li>
@@ -69,7 +86,7 @@
         </header>
     
         <!-- photo / grid -->
-        <section class="container section" id="photos">
+        <section class="container section scrollspy" id="photos">
           <div class="row">
             <div class="col s12 l4">
               <img src="portrait.jpg" alt="" class="responsive-img materialboxed"/>
@@ -113,7 +130,7 @@
 </div>
 
 <!-- SERVICE & TABS -->
-<section class="container section" id="services">
+<section class="container section scrollspy" id="services">
   <div class="row">
     <div class="col s12 l4">
       <h2 class="indigo-text text-darken-4">What I Do...</h2>
@@ -164,7 +181,7 @@
 </div>
 
 <!-- CONTACT FORM -->
-<section class="section container" id="contact">
+<section class="section container scrollspy" id="contact">
   <div class="row">
     <div class="col s12 l5">
       <h2 class="indigo-text text-darken-4">Get In Touch</h2>
@@ -192,12 +209,68 @@
           <i class="material-icons prefix">message</i>
           <textarea id="message" class="materialize-textarea"></textarea>
           <label for="message">Your Message</label>
-        </div>  
+        </div>
+        <div class="input-field">
+          <input type="text" id="date" class="datepicker" />
+          <label for="date">Choose a date you need me for...</label>
+        </div>
+        <div class="input-field">
+          <p>Services required...</p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span>Photography</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox"> 
+              <span>Editing</span>
+            </label>
+          </p>
+        </div>
+        <div class="input-field center">
+          <button class="btn">Submit</button>
+        </div>
       </form>
     </div>
   </div>
 </section>
 <!-- FOOTER -->
+<footer class="page-footer grey darken-3">
+  <div class="container">
+    <div class="row">
+      <div class="col s-12 l6">
+        <h5>About Me</h5>
+        <p>
+          Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+          cerebro. De carne lumbering animata corpora quaeritis. Summus
+          brains sit​​.
+        </p>
+        <p>
+          Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+          cerebro. De carne lumbering animata corpora quaeritis. Summus
+          brains sit​​.
+        </p>
+      </div>
+      <div class="col s12 l4 offset-l2">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="#" class="grey-text text-lighten-3"></a>Facebook</li>
+          <li><a href="#" class="grey-text text-lighten-3"></a>Twitter</li>
+          <li><a href="#" class="grey-text text-lighten-3"></a>LinkedIn</li>
+          <li>
+            <a href="#" class="grey-text text-lighten-3"></a>Instagram
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright grey darken-4">
+    <div class="container center-align">&copy; 2018 Photo Ninja</div>
+  </div>
+</footer>
+
 
     
     
@@ -210,6 +283,11 @@
             $(".materialboxed").materialbox();
             $(".parallax").parallax();
             $(".tabs").tabs();
+            $(".datepicker").datepicker({
+          disableWeekends: true
+           });
+           $(".tooltipped").tooltip();
+           $(".scrollspy").scrollSpy();
           });
         </script>
       </body>
