@@ -7,14 +7,14 @@
     <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
   <style>
-     .footer {
+    /* .footer {
       position: fixed;
       left: 0;
       bottom: 0;
       width: 100%
-    }
+    }*/
   </style>
-  <title>Dialogs</title>
+  <title>Parallax</title>
 </head>
 <body>
 
@@ -38,34 +38,30 @@
   </nav>
   <div class="row">
     <div class="col s12">
-      <h1 class="center-align grey-text">Dialogs</h1>
+      <h1 class="center-align grey-text">Parallax</h1>
     </div>
   </div>
 
   <div class="container">
-    <a onclick="M.toast({html: 'I am a toast'})" class="btn">Toast!</a>
-        <!-- with callback -->
-    <a class="btn" onclick="M.toast({
-      html: 'I am a toast',
-       completeCallback: function(){alert('Your toast was dismissed')}
-       })">
-       Toast!
-      </a>
+    <div class="parallax-container">
+      <div class="parallax"><img src="image3.jpg"></div>
+    </div>
+   </div>
+   <div class="section white">
+   <div class="row container">
+     <h2 class="header">Parallax Example</h2>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium labore nemo, magnam recusandae nostrum, quibusdam placeat vero veniam, cumque perspiciatis expedita maxime eum! Totam quaerat doloribus eaque distinctio velit?</p>
+   </div>
+  </div>
+   <div class="parallax-container">
+    <div class="parallax"><img src="image2.jpg"></div>
+  </div>
+ </div
+
+
+    
         
-      <a onclick="M.toast({html: 'I am a toast' , classes:'rounded'})" class="btn">Toast!
-      </a>
-        <br>
-        <br>
-        <br>
-      <!-- Tooltips -->
-      <!-- Bottom -->
-      <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Hover me!</a>
-      <!-- Top -->
-      <a class="btn tooltipped" data-position="top" data-tooltip="I am a tooltip">Hover me!</a>
-      <!-- Left -->
-      <a class="btn tooltipped" data-position="left" data-tooltip="I am a tooltip">Hover me!</a>
-      <!-- Right -->
-      <a class="btn tooltipped" data-position="right" data-tooltip="I am a tooltip">Hover me!</a>
+      
      </div>
 <br><br>
 
@@ -110,8 +106,8 @@ crossorigin="anonymous"></script>
 src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
 
-   $(document).ready(function(){
-    $('.tooltipped').tooltip();
+     $(document).ready(function(){
+      $('.parallax').parallax();
   });
          
 </script>
