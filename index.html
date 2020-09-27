@@ -7,19 +7,20 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
   <style>
-     /* .footer {
+      .footer {
       position: fixed;
       left: 0;
       bottom: 0;
       width: 100%
-    }*/
+    }
   </style>
-  <title>Table and Media</title>
+  <title>Chips and Pagination</title>
 </head>
 <body>
 
+
   <nav>
-    <div class="nav-wrapper">
+    <div class=" cyan nav-wrapper">
       <div class="container">
         <a href="#" class="brand-logo">Web Design</a>
         <ul id="nav-mobile" class="right hide-on-small-and-down">
@@ -38,119 +39,74 @@
   </nav>
   <div class="row">
     <div class="col s12">
-      <h1 class="center-align grey-text">Table and Media</h1>
+      <h1 class="center-align grey-text">Chips and Pagination</h1>
     </div>
   </div>
+
   <div class="container">
-    <!-- Table -->
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Location</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>John Doe</th>
-          <th>jdoe@gmail.com</th>
-          <th>New York</th>
-        </tr>
-        <tr>
-          <th>Bob Johnson</th>
-          <th>bob@gmail.com</th>
-          <th>Boston</th>
-        </tr>
-        <tr>
-          <th>Karen Williams</th>
-          <th>karen@gmail.com</th>
-          <th>Miami</th>
-        </tr>
-      </tbody>
-    </table>
+    <!-- Chips -->
+    <div class="chip">
+      Web Development
+    </div>
+    <div class="chip">
+      Web Design
+    </div>
+    <div class="chip">
+      Programming
+    </div>
     
     <br><br>
-    <!-- Striped Table -->
-    <table class="striped">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Location</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>John Doe</th>
-          <th>jdoe@gmail.com</th>
-          <th>New York</th>
-        </tr>
-        <tr>
-          <th>Bob Johnson</th>
-          <th>bob@gmail.com</th>
-          <th>Boston</th>
-        </tr>
-        <tr>
-          <th>Karen Williams</th>
-          <th>karen@gmail.com</th>
-          <th>Miami</th>
-        </tr>
-      </tbody>
-    </table>
+    <!-- Chips with close -->
 
-    <!-- Bordered, Highlighted & responsive-table -->
-    <table class="bordered highlight resposive-table">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Location</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>John Doe</th>
-          <th>jdoe@gmail.com</th>
-          <th>New York</th>
-        </tr>
-        <tr>
-          <th>Bob Johnson</th>
-          <th>bob@gmail.com</th>
-          <th>Boston</th>
-        </tr>
-        <tr>
-          <th>Karen Williams</th>
-          <th>karen@gmail.com</th>
-          <th>Miami</th>
-        </tr>
-      </tbody>
-    </table>
+  <div class="container">
+    <div class="chip">
+      Web Development
+      <div class="material-icons">close</div>
+    </div>
+    <div class="chip">
+      Web Design
+      <div class="material-icons">close</div>
+    </div>
+    <div class="chip">
+      Programming
+     <div class="material-icons">close</div>
+    </div>
+
+    <!-- Chips with images -->
+    <div class="chip">
+      <img src="image1.jpg" alt="">
+      Web Development
+    </div>
+    <div class="chip">
+      <img src="image2.jpg" alt="">
+      Web Design
+    </div>
+    <div class="chip">
+      <img src="image3.jpg" alt="">
+      Programming
+    </div>
+
+    <!-- Chips Input with autocomplete -->
+    <!--<div class="chips-input"></div>-->
+
+
+  <!-- Default with no input (automatically generated)  -->
+  <div class="chips"></div>
+  <div class="chips chips-initial"></div>
+  <div class="chips chips-placeholder"></div>
+  <div class="chips chips-autocomplete"></div>
+
+  <!-- Customizable input  -->
+  <div class="chips">
+    <input class="custom-class">
+  </div>
+        
+          
  
-    <div class="row">
-      <div class="col s12">
-      <img src="images.jpg" alt="" class="responsive-img">
-    </div>
-    <!-- Circle Image -->
-      <div class="col s12">
-      <img src="images1.jpg" alt="" class="responsive-img circle">
-
-
-
-      <!-- Responsive Video Embed -->
-      <div class="video-container">
-        <iframe width="754" height="424" src="https://www.youtube.com/embed/W8T-0DFrsYY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <!-- Responsive Video Element -->
-      <video class="responsive-video" controls>
-        <source src="somevideo.mp4" type="video/mp4">
-      </video>
-    </div>
-    <!-- End of Container -->
-
+  </div>
   </div>
 
-  <footer class="page-footer footer">
+  <footer class="cyan page-footer footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -190,5 +146,50 @@ crossorigin="anonymous"></script>
 <script
 src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
+    // $(documemt).ready(function(){
+      // $('.chips-input').material_chip({
+       //  placeholder: 'Enter a tag',
+       //  secondaryPlaceholder: "+tag",
+       //  autocompleteOptions: {
+      //     data: {
+       //      'html': null,
+       //      "css": null,
+       //      "javascript": null,
+     //      }
+    //     }
+   //    });
+       // Add Chip Event
+     //  $(".chips-input").on('chip-add', function(e, chip) {
+      //   alert('You add a chip - ${chip.tag}');
+      //     });
+       //  });
+       // Or with jQuery
+
+  $('.chips').chips();
+  $('.chips-initial').chips({
+    data: [{
+      tag: 'Apple',
+    }, {
+      tag: 'Microsoft',
+    }, {
+      tag: 'Google',
+    }],
+  });
+  $('.chips-placeholder').chips({
+    placeholder: 'Enter a tag',
+    secondaryPlaceholder: '+Tag',
+  });
+  $('.chips-autocomplete').chips({
+    autocompleteOptions: {
+      data: {
+        'Apple': null,
+        'Microsoft': null,
+        'Google': null
+      },
+      limit: Infinity,
+      minLength: 1
+    }
+  });
+</script>
 </body>
 </html>
