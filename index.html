@@ -7,14 +7,14 @@
     <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
   <style>
-     .footer {
+     /*.footer {
       position: fixed;
       left: 0;
       bottom: 0;
       width: 100%
-    }
+    }*/
   </style>
-  <title>Modal</title>
+  <title>Material box</title>
 </head>
 <body>
 
@@ -36,55 +36,57 @@
       </div>
     </div>
   </nav>
+
   <div class="row">
     <div class="col s12">
-      <h1 class="center-align grey-text">Modal</h1>
+      <h1 class="center-align grey-text">Material Box</h1>
     </div>
-  </div>
-
+  </div> 
   <div class="container">
-    <!-- Modal Trigger -->
-   <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-   <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
+  <div class="row"> 
+  <div class="col m6 s12">
+   <img class="materialboxed" width="100%" src="image1.jpg">
+   </div>
+  <div class="col m6 s12">
+   <img class="materialboxed" data-caption="This is my awesome photo"
+   width="100%" src="image3.jpg">
+   </div>
+   </div>
+   
+   <!-- Slider -->
+   <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="image2.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="images4.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="image5.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="image6.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
   </div>
-
-   <!-- Modal Trigger with fixed footer -->
-  <a class="waves-effect waves-light btn modal-trigger red" href="#modal2">Modal</a>
-  <!-- Modal Structure -->
-  <div id="modal2" class="modal modal-fixed-footer">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
-  <!-- Button Sheet Modals  -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Modal</a>
-  <!-- Modal Structure -->
-  <div id="modal3" class="modal bottom-sheet">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
-
-  
-
-      
-     
-</div>
+ </div>
 
   <footer class="cyan page-footer footer">
           <div class="container">
@@ -126,10 +128,20 @@ crossorigin="anonymous"></script>
 <script
 src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
+  $(document).ready(function(){
+    // Material-Box
 
-   $(document).ready(function(){
-    $('.modal').modal();
-  }); 
+  $('.materialboxed').materialbox();
+    // Slider
+
+    $('.slider').slider();
+      indicators: true,
+      height; 500,
+      Transition; 500,
+      Interval; 5000
+  });
+     
+   
 </script>
 </body>
 </html>
