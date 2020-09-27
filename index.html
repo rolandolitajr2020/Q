@@ -4,20 +4,25 @@
   <meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
   <style>
-      .footer {
+    /*  .footer {
       position: fixed;
       left: 0;
       bottom: 0;
       width: 100%
-    }
+    }*/
   </style>
-  <title>Chips and Pagination</title>
+  <title>Carousel</title>
 </head>
 <body>
-
 
   <nav>
     <div class=" cyan nav-wrapper">
@@ -44,67 +49,73 @@
   </div>
 
   <div class="container">
-    <!-- Chips -->
-    <div class="chip">
-      Web Development
-    </div>
-    <div class="chip">
-      Web Design
-    </div>
-    <div class="chip">
-      Programming
-    </div>
-    
-    <br><br>
-    <!-- Chips with close -->
-
-  <div class="container">
-    <div class="chip">
-      Web Development
-      <div class="material-icons">close</div>
-    </div>
-    <div class="chip">
-      Web Design
-      <div class="material-icons">close</div>
-    </div>
-    <div class="chip">
-      Programming
-     <div class="material-icons">close</div>
-    </div>
-
-    <!-- Chips with images -->
-    <div class="chip">
-      <img src="image1.jpg" alt="">
-      Web Development
-    </div>
-    <div class="chip">
-      <img src="image2.jpg" alt="">
-      Web Design
-    </div>
-    <div class="chip">
-      <img src="image3.jpg" alt="">
-      Programming
-    </div>
-
-    <!-- Chips Input with autocomplete -->
-    <!--<div class="chips-input"></div>-->
-
-
-  <!-- Default with no input (automatically generated)  -->
-  <div class="chips"></div>
-  <div class="chips chips-initial"></div>
-  <div class="chips chips-placeholder"></div>
-  <div class="chips chips-autocomplete"></div>
-
-  <!-- Customizable input  -->
-  <div class="chips">
-    <input class="custom-class">
+    <!-- Carousel -->
+  <div class="carousel">
+    <a class="carousel-item" href="#one!">
+      <img src="image5.jpg">
+    </a>
+    <a class="carousel-item" href="#two!">
+      <img src="image1.jpg">
+    </a>
+    <a class="carousel-item" href="#three!">
+      <img src="image2.jpg">
+    </a>
+    <a class="carousel-item" href="#four!">
+      <img src="image3.jpg">
+    </a>
+    <a class="carousel-item" href="#five!">
+      <img src="image4.jpg">
+    </a>
   </div>
-        
-          
- 
+
+<!-- Full with slider -->
+<div class="carousel carousel-slider">
+  <a class="carousel-item" href="#one!">
+    <img src="image4.jpg">
+  </a>
+  <a class="carousel-item" href="#two!">
+    <img src="image6.jpg">
+  </a>
+  <a class="carousel-item" href="#three!">
+    <img src="image7.jpg">
+  </a>
+  <a class="carousel-item" href="#four!">
+    <img src="image8.jpg">
+  </a>
+</div>
+<br>
+<br>
+<br>
+
+<div class="carousel carousel-slider center">
+  <div class="carousel-fixed-item center">
+    <a class="btn waves-effect white grey-text darken-text-2">button</a>
   </div>
+  <div class="carousel-item red white-text" href="#one!">
+    <h2>First Panel</h2>
+    <p class="white-text">This is your first panel</p>
   </div>
+  <div class="carousel-item amber white-text" href="#two!">
+    <h2>Second Panel</h2>
+    <p class="white-text">This is your second panel</p>
+  </div>
+  <div class="carousel-item green white-text" href="#three!">
+    <h2>Third Panel</h2>
+    <p class="white-text">This is your third panel</p>
+  </div>
+  <div class="carousel-item blue white-text" href="#four!">
+    <h2>Fourth Panel</h2>
+    <p class="white-text">This is your fourth panel</p>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<!-- End of Container -->
+  </div>
+<br><br>
 
   <footer class="cyan page-footer footer">
           <div class="container">
@@ -146,50 +157,15 @@ crossorigin="anonymous"></script>
 <script
 src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
-    // $(documemt).ready(function(){
-      // $('.chips-input').material_chip({
-       //  placeholder: 'Enter a tag',
-       //  secondaryPlaceholder: "+tag",
-       //  autocompleteOptions: {
-      //     data: {
-       //      'html': null,
-       //      "css": null,
-       //      "javascript": null,
-     //      }
-    //     }
-   //    });
-       // Add Chip Event
-     //  $(".chips-input").on('chip-add', function(e, chip) {
-      //   alert('You add a chip - ${chip.tag}');
-      //     });
-       //  });
-       // Or with jQuery
 
-  $('.chips').chips();
-  $('.chips-initial').chips({
-    data: [{
-      tag: 'Apple',
-    }, {
-      tag: 'Microsoft',
-    }, {
-      tag: 'Google',
-    }],
+    $(document).ready(function(){
+     $('.carousel').carousel();
+
+     $('.carousel.carousel-slider').carousel({
+    fullWidth: true   
   });
-  $('.chips-placeholder').chips({
-    placeholder: 'Enter a tag',
-    secondaryPlaceholder: '+Tag',
   });
-  $('.chips-autocomplete').chips({
-    autocompleteOptions: {
-      data: {
-        'Apple': null,
-        'Microsoft': null,
-        'Google': null
-      },
-      limit: Infinity,
-      minLength: 1
-    }
-  });
+         
 </script>
 </body>
 </html>
