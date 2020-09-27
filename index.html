@@ -4,23 +4,17 @@
   <meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-      crossorigin="anonymous"
-    />
-  <!-- Compiled and minified CSS -->
+    <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
   <style>
-    /*  .footer {
+     .footer {
       position: fixed;
       left: 0;
       bottom: 0;
       width: 100%
-    }*/
+    }
   </style>
-  <title>Carousel</title>
+  <title>FeatureDiscovery</title>
 </head>
 <body>
 
@@ -44,74 +38,36 @@
   </nav>
   <div class="row">
     <div class="col s12">
-      <h1 class="center-align grey-text">Chips and Pagination</h1>
+      <h1 class="center-align grey-text">FeatureDiscovery</h1>
     </div>
   </div>
 
   <div class="container">
-    <!-- Carousel -->
-  <div class="carousel">
-    <a class="carousel-item" href="#one!">
-      <img src="image5.jpg">
-    </a>
-    <a class="carousel-item" href="#two!">
-      <img src="image1.jpg">
-    </a>
-    <a class="carousel-item" href="#three!">
-      <img src="image2.jpg">
-    </a>
-    <a class="carousel-item" href="#four!">
-      <img src="image3.jpg">
-    </a>
-    <a class="carousel-item" href="#five!">
-      <img src="image4.jpg">
-    </a>
-  </div>
+    <!-- FeatureDiscovery -->
+    <a class="waves-effect waves-light btn" onclick="$('.tap-target').tapTarget()">Open Tap Target</a>
+    <a class="waves-effect waves-light btn">Close Tap Target</a>
 
-<!-- Full with slider -->
-<div class="carousel carousel-slider">
-  <a class="carousel-item" href="#one!">
-    <img src="image4.jpg">
-  </a>
-  <a class="carousel-item" href="#two!">
-    <img src="image6.jpg">
-  </a>
-  <a class="carousel-item" href="#three!">
-    <img src="image7.jpg">
-  </a>
-  <a class="carousel-item" href="#four!">
-    <img src="image8.jpg">
-  </a>
+   <div class="fixed-action-btn">
+     <a href="" id="menu" class="btn btn-floating btn-large cyan">
+       <i class="material-icons">menu</i>
+      </a>
+    </div>
+    <div class="tap-target-wrapper">
+      <div class="tap-target cyan">
+        <div class="tap-target-content white-text">
+          <h5>I am here</h5>
+          <p>Provide value and encourage return visits by introducing users to new features and functionality at contextually relevant moments.</p>
+        </div>
+      </div>
+      <div class="tap0-target-wave">
+        <a class="btn btn-floating btn-large cyan tap-target-origin">
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </div>
 </div>
-<br>
-<br>
-<br>
 
-<div class="carousel carousel-slider center">
-  <div class="carousel-fixed-item center">
-    <a class="btn waves-effect white grey-text darken-text-2">button</a>
-  </div>
-  <div class="carousel-item red white-text" href="#one!">
-    <h2>First Panel</h2>
-    <p class="white-text">This is your first panel</p>
-  </div>
-  <div class="carousel-item amber white-text" href="#two!">
-    <h2>Second Panel</h2>
-    <p class="white-text">This is your second panel</p>
-  </div>
-  <div class="carousel-item green white-text" href="#three!">
-    <h2>Third Panel</h2>
-    <p class="white-text">This is your third panel</p>
-  </div>
-  <div class="carousel-item blue white-text" href="#four!">
-    <h2>Fourth Panel</h2>
-    <p class="white-text">This is your fourth panel</p>
-  </div>
-</div>
-<br>
-<br>
-<br>
-<br>
+ 
 
 <!-- End of Container -->
   </div>
@@ -158,13 +114,10 @@ crossorigin="anonymous"></script>
 src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
 
-    $(document).ready(function(){
-     $('.carousel').carousel();
-
-     $('.carousel.carousel-slider').carousel({
-    fullWidth: true   
+   $(document).ready(function(){
+    $('.tap-target').tapTarget();
   });
-  });
+  
          
 </script>
 </body>
