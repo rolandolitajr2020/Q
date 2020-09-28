@@ -10,35 +10,20 @@
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-          crossorigin="anonymous"
-        />
+          crossorigin="anonymous"/>
         <!-- Import Google Icon Font -->
-        <link
-          href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"/>
         <!-- Compiled and minified CSS -->
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
         />
-<title>Login</title>
+<title>Madmin Project</title>
 <style>
 .loader {
   position: absolute;
   top: 40%;
   left: 47%;
- }
- .btn-extended {
-   display: block;
-   width: 40%;
-   margin: auto;
-   margin-top: 20px;
- }
- .login {
-   margin-top: 70px;
-   margin-bottom: 70px;
- }
+}
   
  </style>
   </head>
@@ -48,41 +33,143 @@
    <div class="container">
      <div class="na-wrappar">
        <a href="index.html" class="brand-logo">Madmin</a>
+       <a href="#" class="button-collapse show-on-large right
+       sidenav-trigger" data-target="slide-out">
+         <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li class="active">
+          <a href="index.html">Dashboard</a>
+        </li>
+        <li>
+          <a href="posts.html">Post</a>
+        </li>
+        <li>
+          <a href="categories.html">Categories</a>
+        </li>
+        <li>
+          <a href="comments.html">comments</a>
+        </li>
+        <li>
+          <a href="users.html">Users</a>
+        </li>
+      </ul>
      </div>
     </div>
-  </nav>>
-
-  <!-- Section: Login -->
-  <section class="section section-login">
-    <div class="container">
-    <div class="row">
-      <div class="col s12 m8 offset-m2 16 offset-13">
-        <div class="card-panel login blue darken-2 white-text center">
-          <h2>Madmin Login</h2>
-          <form action="indexh.html">
-          <div class="input-field">
-            <i class="material-icons prefix">email</i>
-            <input type="text" id="email">
-            <label for="email">Email</label>
-          </div>
-          <div class="input-field">
-            <i class="material-icons prefix">lock</i>
-            <input type="password" id="password">
-            <label for="password">Password</label>
-          </div>
-          <input type="submit" value="Login" class="btn btn-large btn-extended grey lighten-4 black-text">
-         </form>
+  </nav>
+<!-- Sidenav -->
+<ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="images/office.jpg">
+      </div>
+      <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+      <a href="#name"><span class="white-text name">John Doe</span></a>
+      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+  <!-- Section Stats -->
+  <section class="section section-stats center">
+  <div class="row">
+    <div class="col s12 m6 l3">
+      <div class="card-panel blue lighten-1 white-text center">
+        <i class="material-icons medium">insert_emoticon</i>
+        <h5>Monthly Visitor</h5>
+        <h3 class="count">28300</h3>
+        <div class="progress grey lighten-1">
+          <div class="determinate white" style="width: 70%"></div>
+        </div> 
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+      <div class="card-panel black-text center">
+        <i class="material-icons medium">mode_edit</i>
+        <h5>Blog Posts</h5>
+        <h3 class="count">105</h3>
+        <div class="progress grey lighten-1">
+      <div class="determinate blue lighten-1" style="width: 20%"></div>
+        </div> 
+        </div>
+      </div>
+    <div class="col s12 m6 l3">
+      <div class="card-panel blue lighten-1 white-text center">
+        <i class="material-icons medium">mode_comment</i>
+        <h5>Comments</h5>
+        <h3 class="count">1200</h3>
+        <div class="progress grey lighten-1">
+        <div class="determinate white" style="width: 40%"></div>
+        </div> 
+        </div>
+      </div>
+    <div class="col s12 m6 l3">
+      <div class="card-panel black-text center">
+        <i class="material-icons medium">supervisor_account</i>
+        <h5>Users</h5>
+        <h3 class="count">350</h3>
+        <div class="progress grey lighten-1">
+        <div class="determinate blue lighten-1" style="width: 10%">
         </div>
       </div>
     </div>
   </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="section blue darken-2 white-text center">
-    <p>Madmin Panel Copyright &copy; 2020</p>
-  </footer>
-
+</section>
+<!-- Section: Visitor -->
+<section class="section section-visitors blue light-4">
+  <div class="row">
+    <div class="col s12 m6 l8">
+      <div class="card-panel">
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <!-- Latest Comments -->
+        <ul class="collection with-header latest-comments">
+          <li class="collection-header">
+            <h5>Latest Comments</h5>
+          </li>
+          <li class="collection-item avatar">
+            <img src="person1.jpg" alt="" class="circle">
+            <span class="title">John Doe</span>
+            <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, eos.</p>
+            <a href="#!" onclick="M.toast({html: 'Comment Approved', classes: 'rounded'})" class="approve green-text">Approved</a> /
+            <a href="#!" onclick="M.toast({html: 'Comment Denied', classes: 'rounded'})" class="approve red-text">Deny</a>
+          </li>
+          <li class="collection-item avatar">
+            <img src="person2.jpg" alt="" class="circle">
+            <span class="title">Don Pedro</span>
+            <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, eos.</p>
+            <a href="#!" onclick="M.toast({html: 'Comment Approved', classes: 'rounded'})" class="approve green-text">Approved</a> /
+            <a href="#!" onclick="M.toast({html: 'Comment Denied', classes: 'rounded'})" class="approve red-text">Deny</a>
+          </li>
+          <li class="collection-item avatar">
+            <img src="person3.jpg" alt="" class="circle">
+            <span class="title">Ann Uy</span>
+            <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, eos.</p>
+            <a href="#!" onclick="M.toast({html: 'Comment Approved', classes: 'rounded'})" class="approve green-text">Approved</a> /
+            <a href="#!" onclick="M.toast({html: 'Comment Denied', classes: 'rounded'})" class="approve red-text">Deny</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</section>
+<!-- Preloader -->
+<div class="preloader-wrapper big active loader">
+  <div class="spinner-layer spinner-blue-only">
+    <div class="circle-clipper left">
+      <div class="circle"></div>
+    </div><div class="gap-patch">
+      <div class="circle"></div>
+    </div><div class="circle-clipper right">
+      <div class="circle"></div>
+    </div>
+  </div>
+</div>
+  
 
 
 
@@ -92,12 +179,116 @@
          integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
          crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
-    <scrip src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Chart Canvasjs -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script>
-    
- 
-        <script>
-          
-        </script>
+      window.onload = function () {
+      
+      var chart = new CanvasJS.Chart("chartContainer", {
+        exportEnabled: true,
+        animationEnabled: true,
+        title:{
+          text: "Creative Web Design"
+        },
+        subtitles: [{
+          text: "Click Legend to Hide or Unhide Data Series"
+        }], 
+        axisX: {
+          title: "States"
+        },
+        axisY: {
+          title: "Oil Filter - Units",
+          titleFontColor: "#4F81BC",
+          lineColor: "#4F81BC",
+          labelFontColor: "#4F81BC",
+          tickColor: "#4F81BC",
+          includeZero: true
+        },
+        axisY2: {
+          title: "Clutch - Units",
+          titleFontColor: "#C0504E",
+          lineColor: "#C0504E",
+          labelFontColor: "#C0504E",
+          tickColor: "#C0504E",
+          includeZero: true
+        },
+        toolTip: {
+          shared: true
+        },
+        legend: {
+          cursor: "pointer",
+          itemclick: toggleDataSeries
+        },
+        data: [{
+          type: "column",
+          name: "Oil Filter",
+          showInLegend: true,      
+          yValueFormatString: "#,##0.# Units",
+          dataPoints: [
+            { label: "New Jersey",  y: 19034.5 },
+            { label: "Texas", y: 20015 },
+            { label: "Oregon", y: 25342 },
+            { label: "Montana",  y: 20088 },
+            { label: "Massachusetts",  y: 28234 }
+          ]
+        },
+        {
+          type: "column",
+          name: "Clutch",
+          axisYType: "secondary",
+          showInLegend: true,
+          yValueFormatString: "#,##0.# Units",
+          dataPoints: [
+            { label: "New Jersey", y: 210.5 },
+            { label: "Texas", y: 135 },
+            { label: "Oregon", y: 425 },
+            { label: "Montana", y: 130 },
+            { label: "Massachusetts", y: 528 }
+          ]
+        }]
+      });
+      setTimeout(function() {
+          chart.render();
+        }, 1000);
+      
+      
+      function toggleDataSeries(e) {
+        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+          e.dataSeries.visible = false;
+        } else {
+          e.dataSeries.visible = true;
+        }
+        e.chart.render();
+      }
+      
+      }
+      </script>
+      
+    <script>
+    $('.section').hide();
+     setTimeout(function() {
+    $(document).ready(function() {
+      // Show Section
+      $('.section').fadeIn();
+        //Hide Loader
+      $('.loader').fadeOut();
+      // sidenav
+      $('.sidenav').sidenav();
+      // Counter
+      $('.count').each(function() {
+        $(this).prop('Counter', 0).animate({
+          Counter: $(this).text()
+        }, {
+          duration: 40000,
+          easing: 'swing',
+          step: function(now) {
+         $(this).text(Math.ceil(now));
+          }
+        });
+      });
+   });
+  }, 1000);
+ </script>
       </body>
     </html>
