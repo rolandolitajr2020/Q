@@ -15,400 +15,325 @@
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
-<title>Quazzu Cloud Hosting</title>
+<title>Palawan</title>
 <style>
-  .primary-overlay {
-  background: rgba(112, 81, 176, 0.7);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.main-header {
-  background: url(background.jpg);
-  min-height: 600px;
-  background-position: center;
-  background-size: cover;
-  color: #fff;
-}
-
-.main-header .showcase {
-  padding-top: 100px;
-}
-
-.main-header-inner {
-  background: url(background.jpg);
+  header {
+  background: url(image3.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 350px;
-  color: #fff;
-}
-
-.main-header-inner .showcase {
-  padding-top: 100px;
-}
-
-.active-link {
-  color: #d847f1;
-  font-weight: bold;
-}
-
-.section-developers {
-  position: relative;
-  background: url(code.jpg);
-  background-size: cover;
-  background-position: center;
-  border-top: #333 solid 5px;
-  border-bottom: #333 solid 5px;
-  min-height: 160px;
-}
-
-.section-podcast {
-  position: relative;
-  background: url(circuit.jpg);
-  background-size: cover;
-  background-position: center;
-  border-top: #333 solid 5px;
-  border-bottom: #333 solid 5px;
-  min-height: 160px;
-}
-
-.section-podcast a {
-  margin-top: 30px;
-}
-
-.section-podcast .primary-overlay {
-  background: rgba(112, 81, 176, 0.9);
-}
-
-.carousel-item p {
-  font-size: 20px !important;
-}
-
-.tabs .indicator {
-  background-color: #6a1b9a !important;
-}
-
-.btn-extend {
-  display: block;
-  width: 100%;
-}
-
-@media (max-width: 500px) {
-  .section-developers,
-  .section-podcast {
-    min-height: 240px;
+  min-height: 1000px;
   }
-}
-
+  section {
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+  }
+  .tabs .indicator {
+        background-color: #1a237e;
+  }
+  @media screen and (max-width: 670px) {
+      header {
+      min-height: 500px;
+  }
+  .loader {
+  position: absolute;
+  top: 40%;
+  left: 47%;
+  }
+ .btn-extended {
+   display: block;
+   width: 40%;
+   margin: auto;
+   margin-top: 20px;
+ }
+ .login {
+   margin-top: 70px;
+   margin-bottom: 70px;
+ }
+  }
   </style>
   </head>
   <body>
   
   <!-- NAVBAR -->
-  <!-- Header -->
-  <header class="main-header">
-    <nav class="transparent">
-      <div class="container">
-        <div class="nav-wrapper">
-          <a href="" class="brand-logo">Quazzu</a>
-          <a href="#" class="button-collapse sidenav-trigger" data-target="slide-out">
-            <i class="fa fa-bars right hide-on-large-only"></i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-            <li>
-              <a href="index.html" class="active-link">Home</a>
-            </li>
-            <li>
-              <a href="solutions.html">Solutions</a>
-            </li>
-            <li>
-              <a href="signup.html">Sign Up</a>
-            </li>
-            <li>
-              <a href="#login-modal" class="btn purple modal-trigger">Login</a>
-            </li>
-            <li>
-              <a href="https://facebook.com">
-                <i class="fab fa-facebook"></i>
+  <header>
+          <nav class="nav-wrapper transparent">
+            <div class="container">
+              <a href="" class="brand-logo">Palawan</a>
+              <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons">menu</i>
               </a>
-            </li>
-            <li>
-              <a href="https://twitter.com">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://instagram.com">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login-modal" class="btn indigo-text text-darken-4 modal-trigger">Login</a></li>
+                <li>
+                  <a href="" class="tooltipped btn-floating btn-small indigo darken-4"
+                    data-tooltip="This is Instragram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="tooltipped btn-floating btn-small indigo darken-4"
+                    data-tooltip="This is Facebook">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="tooltipped btn-floating btn-small indigo darken-4"
+                    data-tooltip="This is Twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+              <ul class="sidenav grey lighten-2" id="mobile-menu">
+                <li><a href="#photos-modal" class="btn blue modal-trigger">Photos</a></li>
+                <li><a href="#services-modal" class="btn blue modal-trigger">Services</a></li>
+                <li><a href="#contact" class="btn blue modal-trigger">Contact</a></li>
+                <li><a href="#login-modal" class="btn blue modal-trigger">Login</a></li>
+              </ul>
+            </div>
+          </nav>
+          <br>
+          <br>
+          <br>
+          <br>
+            <h1 class="white-text center">Come and Experience Palawan</h1>
+ </header> 
+<!-- PHOTO GRID -->
+        <section class="container section scrollspy" id="photos">
+          <div class="row">
+            <div class="col s12 l4">
+              <img src="image1.jpg" alt="" class="responsive-img materialboxed"/>
+            </div>
+            <div class="col s12 l6 offset-l1">
+              <h2 class="indigo-text text-darken-4">Portraits</h2>
+              <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+                cerebro. De carne lumbering animata corpora quaeritis. Summus brains
+                sit​​.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+              <img src="image6.jpg" alt="" class="responsive-img materialboxed" />
+            </div>
+            <div class="col s12 l6 pull-l5 right-align offset-l1">
+              <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+              <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+                cerebro. De carne lumbering animata corpora quaeritis. Summus brains
+                sit​​.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 l4">
+              <img src="image2.jpg" alt="" class="responsive-img materialboxed"/>
+            </div>
+            <div class="col s12 l6 offset-l1">
+              <h2 class="indigo-text text-darken-4">Nature</h2>
+              <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+                cerebro. De carne lumbering animata corpora quaeritis. Summus brains
+                sit​​.</p>
+            </div>
+          </div>
+       </section>
+ 
 
-    <ul id="slide-out" class="sidenav">
-      <li><div class="user-view">
-        <div class="background">
-          <img src="code.jpg">
-        </div>
-        <a href="#user"><img class="circle" src="circuit.jpg"></a>
-        <a href="#name"><span class="white-text name">John Doe</span></a>
-        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-      </div></li>
-      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-      <li><a href="#!">Second Link</a></li>
-      <li><div class="divider"></div></li>
-      <li><a class="subheader">Subheader</a></li>
-      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-    </ul>
-<!-- Showcase -->
-<div class="showcase container">
-  <div class="row">
-    <div class="col s12 m10 offset-m1 center">
-      <h5>Welcome To Quazzu</h5>
-      <h1>Build For The Future</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit fugit deserunt quos provident aliquam inventore.</p>
-      <br>
-      <br>
-      <a href="solutions.html" class="btn btn-large white purple-text">Learn More</a>
-      <a href="signup.html" class="btn btn-large purple white-text">Sign Up</a>
-    </div>
+<!-- PARALLAX -->
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="image4.jpg" alt="" class="responsive-img" />
   </div>
 </div>
-</header>  
 
- <!-- Section: Icon Boxes -->
- <section class="section section-icons center">
-  <div class="container">
-    <div class="row">
-      <div class="col s12 m4">
-        <div class="card-panel">
-          <i class="fa fa-user fa-3x deep-purple-text text-darken-2"></i>
-          <h5 class="grey-text text-darken-4">Free Account</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, suscipit!</p>
-        </div>
-      </div>
-      <div class="col s12 m4">
-        <div class="card-panel">
-          <i class="fa fa-bolt fa-3x deep-purple-text text-darken-2"></i>
-          <h5 class="grey-text text-darken-4">Fast Conections</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, suscipit!</p>
-        </div>
-      </div>
-      <div class="col s12 m4">
-        <div class="card-panel">
-          <i class="fa fa-database fa-3x deep-purple-text text-darken-2"></i>
-          <h5 class="grey-text text-darken-4">NoSQL Databases</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, suscipit!</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-         
- <!-- Section: About -->
- <section class="section section-about grey lighten-4">
-  <div class="container">
-    <div class="row">
-      <div class="col s12 m6">
-        <h2>
-          <span class="deep-purple-text text-darken-1">About</span> Us</h2>
-        <p class="flow-text grey-text text-darken-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid odio eum magnam aut at voluptates omnis sint reiciendis dolorem recusandae.</p>
-      </div>
-      <div class="col s12 m6">
-        <img src="tech.jpg" alt="" class="circle responsive-img">
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- Section: Developers -->
-<section class="section section-developers white-text">
-  <div class="primary-overlay valign-wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 center">
-          <h3>For Developers, By Developers</h3>
-        </div>
+<!-- SERVICE & TABS -->
+<section class="container section scrollspy" id="services">
+  <div class="row">
+    <div class="col s12 l4">
+      <h2 class="indigo-text text-darken-4">What I Do...</h2>
+      <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+        cerebro. De carne lumbering animata corpora quaeritis. Summus brains
+        sit​​.</p>
+      <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+        cerebro. De carne lumbering animata corpora quaeritis. Summus brains
+        sit​​.</p>
+    </div>
+    <div class="col s12 l6 offset-l2">
+      <ul class="tabs">
+        <li class="tab col s6">
+          <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+        </li>
+        <li class="tab col s6">
+          <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+        </li>
+      </ul>
+      <div class="col s12" id="photography">
+        <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+        <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+          cerebro. De carne lumbering animata corpora quaeritis. Summus
+          brains sit​​.</p>
+        <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+          cerebro. De carne lumbering animata corpora quaeritis. Summus
+          brains sit​​.</p>
+      </div>
+      <div class="col s12" id="editing">
+        <p class="flow-text indigo-text text-darken-4">EDITING</p>
+        <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+          cerebro. De carne lumbering animata corpora quaeritis. Summus
+          brains sit​​.</p>
+        <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+          cerebro. De carne lumbering animata corpora quaeritis. Summus
+          brains sit​​.</p>
       </div>
     </div>
   </div>
 </section>
 
-  <!-- Section: Languages -->
-  <section class="section section-language grey lighten-4">
-    <div class="container">
-      <div class="row">
-        <h4 class="center">Work With
-          <span class="deep-purple-text text-darken-1"> Any Language</span>
-        </h4>
-        <br>
-        <br>
-        <div class="row">
-          <div class="col s2">
-            <img src="python-logo.png" class="responsive-img" alt="">
-          </div>
-          <div class="col s2">
-            <img src="ruby-logo.png" class="responsive-img" alt="">
-          </div>
-          <div class="col s2">
-            <img src="php-logo.png" class="responsive-img" alt="">
-          </div>
-          <div class="col s2">
-            <img src="node-logo.png" class="responsive-img" alt="">
-          </div>
-          <div class="col s2">
-            <img src="c-sharp-logo.png" class="responsive-img" alt="">
-          </div>
-          <div class="col s2">
-            <img src="java-logo.png" class="responsive-img" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-    <!-- Section: Podcast -->
-    <section class="section section-podcast white-text">
-      <div class="primary-overlay valign-wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m8">
-              <h4>Listen to the Quazzu Podcast</h4>
-              <p>Every Thursday at 5pm EST</p>
-            </div>
-            <div class="col s12 m4">
-              <a href="#" class="btn purple btn-large">
-                <i class="fa fa-podcast"></i> Listen
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- PARALLAX -->
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="image5.jpg" alt="" class="responsive-img" />
+  </div>
+</div>
 
-      <!-- Section: Testimonial -->
-  <section class="section section-testimonial grey lighten-4">
-    <div class="container">
-      <div class="row">
-        <div class="col s12">
-          <div class="carousel carousel-slider center">
-            <div class="carousel-item" href="#one!">
-              <h2>Testimonial 1</h2>
-              <p class="flow-text">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat assumenda ad minima reiciendis vitae fuga,
-                dicta ipsa sit maxime aperiam quo animi expedita adipisci officia hic, odio omnis temporibus earum?"
-                <p>
-                  <em>- John Doe From Microsystems</em>
-                </p>
-              </p>
-              <div class="carousel-fixed-item center hide-on-small-and-down">
-                <a href="#" class="btn grey">Read More</a>
-              </div>
-            </div>
-            <div class="carousel-item" href="#two!">
-              <h2>Testimonial 2</h2>
-              <p class="flow-text">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat assumenda ad minima reiciendis vitae fuga,
-                dicta ipsa sit maxime aperiam quo animi expedita adipisci officia hic, odio omnis temporibus earum?"
-                <p>
-                  <em>- Mike SMith From Edge INC</em>
-                </p>
-              </p>
-              <div class="carousel-fixed-item center hide-on-small-and-down">
-                <a href="#" class="btn grey">Read More</a>
-              </div>
-            </div>
-            <div class="carousel-item" href="#three!">
-              <h2>Testimonial 3</h2>
-              <p class="flow-text">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat assumenda ad minima reiciendis vitae fuga,
-                dicta ipsa sit maxime aperiam quo animi expedita adipisci officia hic, odio omnis temporibus earum?"
-                <p>
-                  <em>- Karen Williams from Techsoft</em>
-                </p>
-              </p>
-              <div class="carousel-fixed-item center hide-on-small-and-down">
-                <a href="#" class="btn grey">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<!-- CONTACT FORM -->
+<section class="section container scrollspy" id="contact">
+  <div class="row">
+    <div class="col s12 l5">
+      <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+      <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+        cerebro. De carne lumbering animata corpora quaeritis. Summus brains
+        sit​​.</p>
+      <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+        cerebro. De carne lumbering animata corpora quaeritis. Summus brains
+        sit​​.</p>
+      <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+        cerebro. De carne lumbering animata corpora quaeritis. Summus brains
+        sit​​.</p>
+      <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+        cerebro. De carne lumbering animata corpora quaeritis. Summus brains
+        sit​​.</p>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="page-footer deep-purple lighten-1">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">About Us</h5>
-          <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ducimus, hic id quod enim voluptate </p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li>
-              <a href="index.html" class="grey-text text-lighten-3" >Home</a>
-            </li>
-            <li>
-              <a href="solutions.html" class="grey-text text-lighten-3" >Solutions</a>
-            </li>
-            <li>
-              <a  href="signup.html" class="grey-text text-lighten-3" >Signup</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright deep-purple darken-1">
-      <div class="container">
-        Quazzu &copy; 2020
-        <a class="grey-text text-lighten-4 right" href="#!">Terms & Conditions</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Login Modal -->
-  <div id="login-modal" class="modal">
-    <div class="modal-content">
-      <h4>Account Login</h4>
-      <p>Login to access your account dashboard</p>
-       <form>
+    <div class="col s12 l5 offset-l2">
+      <form action="">
         <div class="input-field">
-          <input type="email" id="email">
-          <label for="email">Email</label>
+          <i class="material-icons prefix">phone</i>
+          <textarea id="message" class="materialize-textarea"></textarea>
+          <label for="phone">Your Phone no.</label>
         </div>
         <div class="input-field">
-          <input type="password" id="password">
-          <label for="password">Password</label>
+          <i class="material-icons prefix">message</i>
+          <textarea id="message" class="materialize-textarea"></textarea>
+          <label for="message">Your Message</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="date" class="datepicker" />
+          <label for="date">Choose a date you need me for...</label>
+        </div>
+        <div class="input-field">
+          <p>Services required...</p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span>Photography</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox"> 
+              <span>Editing</span>
+            </label>
+          </p>
+        </div>
+        <div class="input-field center">
+          <button class="btn">Submit</button>
         </div>
       </form>
-  </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close btn grey">
-        <i class="fa fa-sync"></i> Reset Password</a>
-      <a href="#!" class="modal-action modal-close btn purple">
-        <i class="fa fa-lock"></i> Login</a>
     </div>
-<!-- Compiled and minified JavaScript -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  </div>
+</section>
 
-  <script>
-    $(document).ready(function () {
-      // Sidenav
-       $('.sidenav').sideNav();
-       // Carousel
-       $('.carousel.carousel-slider').carousel({ fullWidth: true });
-       // Modal
-       $('.modal').modal();
-    });
-  </script>
+<!-- FOOTER -->
+<footer class="page-footer grey darken-3">
+  <div class="container">
+    <div class="row">
+      <div class="col s-12 l6">
+        <h5>About Me</h5>
+        <p>
+          Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+          cerebro. De carne lumbering animata corpora quaeritis. Summus
+          brains sit​​.
+        </p>
+        <p>
+          Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+          cerebro. De carne lumbering animata corpora quaeritis. Summus
+          brains sit​​.
+        </p>
+      </div>
+      <div class="col s12 l4 offset-l2">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="#" class="grey-text text-lighten-3"></a>Facebook</li>
+          <li><a href="#" class="grey-text text-lighten-3"></a>Twitter</li>
+          <li><a href="#" class="grey-text text-lighten-3"></a>LinkedIn</li>
+          <li>
+            <a href="#" class="grey-text text-lighten-3"></a>Instagram
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright grey darken-4">
+    <div class="container center-align">&copy; Palawan 2020</div>
+  </div>
+</footer>
+ <!-- Login Modal -->
+ <div id="login-modal" class="modal">
+  <div class="modal-content">
+    <h4>Account Login</h4>
+    <p>Login to access your account</p>
+     <form>
+      <div class="input-field">
+        <input type="email" id="email">
+        <label for="email">Email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="password">
+        <label for="password">Password</label>
+      </div>
+    </form>
+</div>
+<div class="modal-footer">
+  <a href="#!" class="modal-action modal-close btn grey-darken-1">
+    <i class="fa fa-sync"></i> signup</a>
+  <a href="#!" class="modal-action modal-close btn purple">
+    <i class="fa fa-lock"></i> Login</a>
+</div>
+  
+  </div>
+  </div>
 
-        
+
+
+    
+    
+ <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script>
+          $(document).ready(function() {
+            $(".sidenav").sidenav();
+            $(".materialboxed").materialbox();
+            $(".parallax").parallax();
+            $(".tabs").tabs();
+            $(".datepicker").datepicker({
+          disableWeekends: true
+           });
+           $(".tooltipped").tooltip();
+           $(".scrollspy").scrollSpy();
+           $('.modal').modal();
+          });
+        </script>
       </body>
     </html>
