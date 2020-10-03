@@ -14,176 +14,111 @@
           rel="stylesheet">
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-        <title>Quazzu Cloud Hosting</title>
-        <style>
-          .primary-overlay {
-          background: rgba(112, 81, 176, 0.7);
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-        }
-        
-        .main-header {
-          background: url(background.jpg);
-          min-height: 600px;
-          background-position: center;
-          background-size: cover;
-          color: #fff;
-        }
-        
-        .main-header .showcase {
-          padding-top: 100px;
-        }
-        
-        .main-header-inner {
-          background: url(background.jpg);
-          background-size: cover;
-          background-position: center;
-          min-height: 350px;
-          color: #fff;
-        }
-        
-        .main-header-inner .showcase {
-          padding-top: 100px;
-        }
-        
-        .active-link {
-          color: #d847f1;
-          font-weight: bold;
-        }
-        
-        .section-developers {
-          position: relative;
-          background: url(code.jpg);
-          background-size: cover;
-          background-position: center;
-          border-top: #333 solid 5px;
-          border-bottom: #333 solid 5px;
-          min-height: 160px;
-        }
-        
-        .section-podcast {
-          position: relative;
-          background: url(circuit.jpg);
-          background-size: cover;
-          background-position: center;
-          border-top: #333 solid 5px;
-          border-bottom: #333 solid 5px;
-          min-height: 160px;
-        }
-        
-        .section-podcast a {
-          margin-top: 30px;
-        }
-        
-        .section-podcast .primary-overlay {
-          background: rgba(112, 81, 176, 0.9);
-        }
-        
-        .carousel-item p {
-          font-size: 20px !important;
-        }
-        
-        .tabs .indicator {
-          background-color: #6a1b9a !important;
-        }
-        
-        .btn-extend {
-          display: block;
-          width: 100%;
-        }
-        
-        @media (max-width: 500px) {
-          .section-developers,
-          .section-podcast {
-            min-height: 240px;
-          }
-        }
+
+<title>Palawan</title>
+<style>
+  header {
+  background: url(image3.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 1000px;
+  }
+  section {
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+  }
+  .tabs .indicator {
+        background-color: #1a237e;
+  }
+  @media screen and (max-width: 670px) {
+      header {
+      min-height: 500px;
+  }
+  .loader {
+  position: absolute;
+  top: 40%;
+  left: 47%;
+  }
+ .btn-extended {
+   display: block;
+   width: 40%;
+   margin: auto;
+   margin-top: 20px;
+ }
+ 
+  }
   </style>
   </head>
   <body>
-     
-        
- <!-- NAVBAR -->
-  <!-- Header -->
-  <header class="main-header">
-    <nav class="transparent">
-      <div class="container">
-        <div class="nav-wrapper">
-          <a href="" class="brand-logo">Quazzu</a>
-          <a href="#" class="button-collapse sidenav-trigger" data-target="slide-out">
-            <i class="fa fa-bars right hide-on-large-only"></i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="solutions.html">Solutions</a>
-            </li>
-            <li>
-              <a href="signup.html" class="active-link">Sign Up</a>
-            </li>
-            <li>
-              <a href="#login-modal" class="btn purple modal-trigger">Login</a>
-            </li>
-            <li>
-              <a href="https://facebook.com">
-                <i class="fab fa-facebook"></i>
+  
+  <!-- NAVBAR -->
+  <header>
+          <nav class="nav-wrapper transparent">
+            <div class="container">
+              <a href="" class="brand-logo">Palawan</a>
+              <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons">menu</i>
               </a>
-            </li>
-            <li>
-              <a href="https://twitter.com">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://instagram.com">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <ul id="slide-out" class="sidenav">
-      <h4 class="purple-text text darken-4 center">Quazzum</h4>
-      <li>
-        <div class="divider"></div>
-      </li> 
-      <li><a href="index.html">
-        <i class="fa-fa-home grey-text text-darken-4"></i>Home</a>
-      </li>
-      <li><a href="solutions.html">
-        <i class="fa-fa-cog grey-text text-darken-4"></i>Solution</a>
-      </li>
-      <li><a href="signup.html">
-        <i class="fa-fa-cog grey-text text-darken-4"></i>Signup</a>
-      </li>
-      <li>
-       <div class="divider"></div>
-      </li>
-       <li>
-         <a href="#login-modal" class="btn purple">Login</a>
-       </li>
-    </ul>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login-modal" class="btn purple modal-trigger">Login</a></li>
+                <li><a href="#signup" class="btn indigo-text text-darken-4">Signup</a></li>
+                <li>
+                  <a href="" class="tooltipped btn-floating btn-small indigo darken-4"
+                    data-tooltip="This is Instragram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="tooltipped btn-floating btn-small indigo darken-4"
+                    data-tooltip="This is Facebook">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="tooltipped btn-floating btn-small indigo darken-4"
+                    data-tooltip="This is Twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+              <ul id="mobile-menu" class="sidenav">
+                <h4 class="purple-text text darken-4 center">Palawan</h4>
+                <li>
+                  <div class="divider"></div>
+                </li> 
+                <li><a href="index.html">
+                  <i class="fa-fa-home grey-text text-darken-4"></i>Home</a>
+                </li>
+                <li><a href="#services">
+                  <i class="fa-fa-cog grey-text text-darken-4"></i>Services</a>
+                </li>
+                <li><a href="#contact">
+                  <i class="fa-fa-cog grey-text text-darken-4"></i>Contact</a>
+                </li>
+                <li>
+                 <div class="divider"></div>
+                </li>
+                 <li>
+                   <a href="#login-modal" class="btn purple modal-trigger">Login</a>
+                 </li>
+                 <li>
+                   <a href="#signup.html"  class="btn purple">Signup</a>
+                 </li>
+              </ul>
+            </div>
+          </nav>
+          <br>
+          <br>
+          <br>
+          <br>
+            <h1 class="white-text center">Create an Account</h1>
+            <h2 class="white-text center">More Fun in Palawan</h2>
 
-<!-- Showcase -->
-<div class="showcase container">
-  <div class="row">
-    <div class="col s12 m10 offset-m1 center">
-      <h5>Welcome To Quazzu</h5>
-      <h1>Create an Account</h1>
-      <br>
-      <br>
-    </div>
-  </div>
-</div>
-</header>  
- 
+ </header> 
+  
 <!-- Section: Signup -->
 <section class="section section-signup">
   <div class="container">
@@ -222,78 +157,91 @@
               <input type="text" id="company">
               <label for="company">Company</label>
             </div>
-            <div class="input-field">
-              <select id="role">
-                <option value="" disabled selected>Select Role</option>
-                <option value="professional">Professional Developer</option>
+            <div class="input-field col s12">
+              <select role>
+                <option value="" disabled selected>Choose your option</option>
                 <option value="hobbyist">Hobbyist</option>
                 <option value="student">Student</option>
                 <option value="manager">Manager</option>
-                <option value="other">Other</option>
+                <option value="others">Others</option>
               </select>
-              <label for="role">Role</label>
+              <label>Role</label>
             </div>
             <input type="submit" value="Signup" class="btn btn-large purple btn-extend">
           </form>
         </div>
       </div>
 </section>  
-            
-  <!-- footer  -->
-  <footer class="page-footer deep-purple lighten-1">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Footer Content</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright deep-purple darken-1">
-        <div class="container">
-        © 2020 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-        </div>
-      </div>
-    </footer>
 
-  <!-- Modal -->
-  <div id="login-modal" class="modal">
-    <div class="modal-content">
-      <h4>Account Login</h4>
-      <p>Login to access your account dashboard</p>
-      <form>
-        <div class="input-field">
-          <input type="email" id="email">
-          <label for="email">Email</label>
-        </div>
-        <div class="input-field">
-          <input type="password" id="password">
-          <label for="email">Password</label>
-        </div>
-      </form>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close btn grey">
-        <i class="fa fa-sync"></i>Reset Password
-      </a>
-      <a href="#!" class="modal-action modal-close btn purple">
-        <i class="fa fa-lock"></i>Login
-      </a>
+
+
+<!-- PARALLAX -->
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="image5.jpg" alt="" class="responsive-img" />
+  </div>
+</div>
+
+ 
+ 
+<!-- FOOTER -->
+<footer class="page-footer grey darken-3">
+  <div class="container">
+    <div class="row">
+      <div class="col s-12 l6">
+        <h5>About Me</h5>
+        <p>
+          Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+          cerebro. De carne lumbering animata corpora quaeritis. Summus
+          brains sit​​.
+        </p>
+        <p>
+          Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+          cerebro. De carne lumbering animata corpora quaeritis. Summus
+          brains sit​​.
+        </p>
+      </div>
+      <div class="col s12 l4 offset-l2">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="#" class="grey-text text-lighten-3"></a>Facebook</li>
+          <li><a href="#" class="grey-text text-lighten-3"></a>Twitter</li>
+          <li><a href="#" class="grey-text text-lighten-3"></a>LinkedIn</li>
+          <li>
+            <a href="#" class="grey-text text-lighten-3"></a>Instagram
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
+  <div class="footer-copyright grey darken-4">
+    <div class="container center-align">&copy; Palawan 2020</div>
+  </div>
+</footer>
+ <!-- Login Modal -->
+ <div id="login-modal" class="modal">
+  <div class="modal-content">
+    <h4>Account Login</h4>
+    <p>Login to access your account</p>
+     <form>
+      <div class="input-field">
+        <input type="email" id="email">
+        <label for="email">Email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="password">
+        <label for="password">Password</label>
+      </div>
+    </form>
+</div>
+<div class="modal-footer">
+  <a href="#!" class="modal-action modal-close btn purple">
+    <i class="fa fa-lock"></i> Login</a>
+</div>
+  
+  </div>
+  </div>
 
-
-     
 
 
     
@@ -302,18 +250,19 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
         <script>
-
-       $(document).ready(function () {
-      // Sidenav
-       $('.sidenav').sideNav();  
-       // Modal
-       $('.modal').modal();
-       // Tabs
-       $('.tabs').tabs();
-       // Select
-       $("select").form_select;
-    });
-          
+          $(document).ready(function() {
+            $(".sidenav").sidenav();
+            $(".materialboxed").materialbox();
+            $(".parallax").parallax();
+            $(".tabs").tabs();
+            $(".datepicker").datepicker({
+          disableWeekends: true
+           });
+           $(".tooltipped").tooltip();
+           $(".scrollspy").scrollSpy();
+           $('.modal').modal();
+           $('select').formSelect();
+          });
         </script>
       </body>
     </html>
